@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube
     </title>
-    <link rel="icon" href="Logo.png" type="image/png">
+    <link href="Logo.png">
 </head>
 <body>
     <button id="idk">Idk</button>
-    <input type="text" id="text" placeholder="Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk">
+    <input type="text" id="text" placeholder="Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk Idk">
+    <button id="TextEnter">Idk</button>
     <script>
-        function idk(){
+        function Idk(){
             var text = document.getElementById("text")
-            var InputCode = Idk
             var link = Math.floor(Math.random() * 10 + 1) / 10;
-            //The Troll Links && Text Input
-            if (text.value==!InputCode) {
+            //The Troll Links
                 if(link==0.1){window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
                 if(link==0.2){window.location.href="https://www.youtube.com/watch?v=hvL1339luv0";}
                 if(link==0.3){window.location.href="https://youareanidiot.cc";}
@@ -27,12 +26,13 @@
                 if(link==0.8){idk()}
                 if(link==0.9){idk()}
                 if(link==1){idk()}
-            } else {
-                if(text.value==InputCode){window.location.href="https://www.google.com/"}
             }
             //----
+        function Text(){
+            if(text.value=="Idk"){window.location.href="All-Troll-Links.html";}
         }
-        document.getElementById("idk").addEventListener("click",idk)
+        document.getElementById("idk").addEventListener("click",Idk)
+        document.getElementById("TextEnter").addEventListener("click",Text)
     </script>
     <style>
         body{
@@ -42,14 +42,18 @@
         #idk{
             background-color: black;
             color: rgb(100,0,0);
-            height: 93vh;
+            height: 94vh;
             width: 190vh;
             font-size: 200px;
         }
         #text{
             background-color: black;
             color: white;
-            width: 188vh;
+            width: 180vh;
+        }
+        #TextEnter{
+            background-color: black;
+            color: white;
         }
     </style>
 </body>
